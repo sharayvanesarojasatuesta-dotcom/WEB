@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Centolla</title>
+
+    <link rel="stylesheet" href="../CSS/menu.css">
+
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="../IMAGENES/logo.png" alt="Logo Cangrejo">
+    </div>
+    <h1>El Centollo</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./UBICACION.html">Ubicación</a></li>
+        <li><a href="./RESERVAS.html">Reservas</a></li>
+    </ul>
+</nav>
+
+<main class="menu-container">
+
+    <h1 class="menu-title">
+        Nuestro Menú de Especialidades
+    </h1>
+
+    <section id="menu-cards-container" class="cards-list">
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img1.png" alt="Falsa mousse centollo en cucharitas" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Falsa mousse centollo en cucharitas</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        <span class="author-badge" style="color: #d35400;">1 Cooksnap</span> por Berta Álvarez
+                    </div>
+                    <p class="recipe-ingredients">huevos cocidos • palitos de cangrejo • mejillones al natural escurridos • berberechos al natural escurridos • mayonesa • nata para cocinar • sal • cucharitas comestibles</p>
+                </div>
+                <div class="recipe-card-footer"></div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img2.png" alt="Crema de centolla con crujiente de pan" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Crema de centolla con crujiente de pan</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Arianne
+                    </div>
+                    <p class="recipe-ingredients">Centollas cocidas • Cebollas medianas • Leche entera con calcio • Maicena • Sal • Pimienta negra • Nuez moscada • Aceite de oliva virgen extra • Pan rallado tostado</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>50 minutos (+ tiempo de extraer la carne)</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>8-10 Comensales</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img3.png" alt="Palta rellena con salpicón de centolla" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Palta rellena con salpicón de centolla</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Jon Michelena
+                    </div>
+                    <p class="recipe-ingredients">carne de centolla cocida • cebolla morada cortada en cuadritos • pimiento morrón cortado en cuadritos • apio cortado en cuadritos • cilantro picado • mayonesa • mostaza a la piedra</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>30 minutos</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>2 raciones</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img4.png" alt="Empanadas de chupe de centolla con camarones" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Empanadas de chupe de centolla con camarones</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Jon Michelena
+                    </div>
+                    <p class="recipe-ingredients">ingredientes para el relleno • carne de centolla cocida • camarones descascarados, desvenados, cortados en trocitos • mantequilla sin sal • cebolla cortada en cuadritos</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>2 horas</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>14-15 raciones</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img5.png" alt="Mariscada de crustáceos y centolla rellena" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Mariscada de crustáceos y centolla rellena</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Alexis Urrutia
+                    </div>
+                    <p class="recipe-ingredients">centolla viva de 1 kilo y medio aproximadamente • conchas finas vivas • gambas frescas grandes • limones y medio medianos • ajos muy gruesos • perejil fresco no muy fino</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>4 personas</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img6.png" alt="Spaghetti con carne de centolla" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Spaghetti con carne de centolla</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Arianne
+                    </div>
+                    <p class="recipe-ingredients">Centollas (hervidas) • Spaghetti • Cebollas (en daditos) • ajo (en daditos) • Concentrado de tomate • Brandy • Estragón • ~10 Tomates cherry (partidos por la mitad) • Aceite de oliva</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>40 minutos (+ tiempo centolla)</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>4 Comensales</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img7.png" alt="Ceviche clásico de mariscos" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Ceviche clásico de mariscos</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        <span class="author-badge" style="color: #d35400;">Destacado</span> por Carlos Gómez
+                    </div>
+                    <p class="recipe-ingredients">pescado blanco en cubos • camarones • pulpo cocido • jugo de limón fresco • cebolla morada en julianas • cilantro picado • ají limo • camote cocido • maíz choclo</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>20 minutos</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>3 porciones</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img8.png" alt="Cazuela de mariscos caribeña" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Cazuela de mariscos caribeña</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Marina Silva
+                    </div>
+                    <p class="recipe-ingredients">mixtura de mariscos • leche de coco • pimentón verde y rojo • cebolla • ajo • pasta de tomate • vino blanco • cilantro • crema de leche para espesar</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>45 minutos</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>4 personas</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img9.png" alt="Arroz con mariscos especial de la casa" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Arroz con mariscos especial de la casa</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Luis Fernando
+                    </div>
+                    <p class="recipe-ingredients">arroz grano largo • calamares • camarones • mejillones • arvejas • zanahoria en cubos • pimentón dulce • fondo de pescado • aceite con achiote para dar color</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>35 minutos</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>5 comensales</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img10.png" alt="Croquetas crujientes de cangrejo y centolla" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Croquetas crujientes de cangrejo y centolla</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Elena Rostova
+                    </div>
+                    <p class="recipe-ingredients">pulpa de cangrejo • carne de centolla desmenuzada • salsa bechamel espesa • cebollino picado • huevo • pan rallado panko • aceite para freír</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>1 hora</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>12 unidades</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img11.png" alt="Salmón sellado en salsa de alcaparras" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Salmón sellado en salsa de alcaparras</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        <span class="author-badge" style="color: #d35400;">Premium</span> por Chef Andrews
+                    </div>
+                    <p class="recipe-ingredients">filete de salmón fresco con piel • alcaparras en salmuera • mantequilla • vino blanco • zumo de limón • pimienta blanca • puré de papas como guarnición</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>25 minutos</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>1 porción</span></div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <div class="card-image-wrapper">
+                <img src="../imagenes/img12.png" alt="Chupe de centolla tradicional" onerror="this.src='https://placehold.co/180x180?text=Sin+Imagen'">
+            </div>
+            <div class="card-content">
+                <div>
+                    <div class="card-header">
+                        <h2>Chupe de centolla tradicional</h2>
+                        <button class="bookmark-btn" onclick="alternarFavorito(this)">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="recipe-meta">
+                        por Patricio Rey
+                    </div>
+                    <p class="recipe-ingredients">carne de centolla • pan de molde remojado en leche • cebolla picada • ají color • queso mantecoso rallado • crema de leche • vino blanco • queso parmesano para gratinar</p>
+                </div>
+                <div class="recipe-card-footer">
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>50 minutos</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-users"></i> <span>6 raciones</span></div>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="pie-pagina-exacto">
+    <div class="bloque-caracteristicas">
+        <div class="contenedor-caracteristicas">
+            <div class="item-caracteristica">
+                <div class="dibujo-svg">
+                    <span class="txt-desde">DESDE</span>
+                    <span class="txt-ano">1911</span>
+                </div>
+                <h3 class="titulo-dorado">MÁS DE 100 AÑOS</h3>
+                <p class="descripcion-blanca">Desde 1911 trabajando con el mejor producto del mar</p>
+            </div>
+
+            <div class="item-caracteristica">
+                <div class="dibujo-svg">
+                    <svg viewBox="0 0 100 40" class="svg-verde">
+                        <path d="M5,20 C25,5 65,5 85,20 C75,23 75,27 85,25 C65,38 25,38 5,20 Z M85,20 L95,10 L92,20 L95,30 Z" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="20" cy="16" r="1.5" fill="#27ae60"/>
+                    </svg>
+                </div>
+                <h3 class="titulo-dorado">EL PRODUCTO MÁS FRESCO</h3>
+                <p class="descripcion-blanca">Pescados y mariscos directos de la lonja</p>
+            </div>
+
+            <div class="item-caracteristica">
+                <div class="dibujo-svg">
+                    <svg viewBox="0 0 100 40" class="svg-verde">
+                        <path d="M30,28 C25,28 22,23 25,18 C25,13 35,10 40,14 C45,8 60,8 65,16 C72,14 78,20 75,26 C78,32 70,38 62,36 C55,40 35,40 30,28 Z" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="titulo-dorado">AHUMADOS ARTESANALES</h3>
+                <p class="descripcion-blanca">Descubre nuestros procesos de ahumado</p>
+            </div>
+
+            <div class="item-caracteristica">
+                <div class="dibujo-svg">
+                    <div class="caja-tienda-real">LA TIENDA</div>
+                </div>
+                <h3 class="titulo-dorado">TIENDA PROPIA</h3>
+                <p class="descripcion-blanca">También te servimos en nuestra tienda física</p>
+            </div>
+
+            <div class="item-caracteristica">
+                <div class="dibujo-svg">
+                    <svg viewBox="0 0 100 40" class="svg-verde">
+                        <path d="M15,35 C30,28 65,10 80,7" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M80,7 C85,15 85,25 85,30 C85,34 82,36 80,34" fill="none" stroke="#27ae60" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="titulo-dorado">SELECCIONAMOS POR TI</h3>
+                <p class="descripcion-blanca">Despreocúpate y disfruta del mejor género del mar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloque-datos-redes">
+        <div class="contenedor-datos-redes">
+            <div class="datos-contacto-bogota">
+                <p><i class="fa-solid fa-location-dot"></i> Carrera 1 #93-50 Chicó Alto, Bogotá</p>
+                <p><i class="fa-solid fa-phone"></i> Tel: (57) 316 690 0508</p>
+                <p><i class="fa-solid fa-envelope"></i> servicioalcliente@tramonti.com.co</p>
+            </div>
+
+            <div class="iconos-redes-sociales">
+                <a href="#" class="boton-red facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="boton-red twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="boton-red whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="boton-red telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#" class="boton-red mas-opciones"><i class="fa-solid fa-plus"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="../CSS/chatbot.css">
+<script src="../JS/menu.js"></script>
+<script src="../JS/chatbot.js"></script>
+
+</body>
+</html>
