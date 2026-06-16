@@ -1,0 +1,487 @@
+/* ==========================================
+   CONFIGURACIÓN BASE
+   ========================================== */
+body {
+
+    background-color:#ffffff;
+
+    font-family:'Source Sans 3', sans-serif;
+
+    margin:0;
+
+    padding:0;
+
+    color:#1a1a1a;
+
+}
+/* ==========================================
+   HEADER
+========================================== */
+
+
+header{
+
+    background-color:#e8e8e8;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+.logo img{
+
+    width:110px;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+header h1{
+
+    font-family:'Lobster',cursive;
+
+    font-size:70px;
+
+    font-weight:normal;
+
+    margin:10px 0 0;
+
+}
+/* ==========================================
+   NAV
+========================================== */
+
+
+nav{
+
+background:#111;
+
+}
+
+
+nav ul{
+
+list-style:none;
+
+display:flex;
+
+justify-content:center;
+
+margin:0;
+
+padding:0;
+
+}
+
+
+nav li{
+
+padding:18px 35px;
+
+}
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+}
+
+
+nav a:hover{
+
+color:#d4d4d4;
+
+}
+
+
+
+.reservas-wrapper {
+
+    width:100%;
+
+    max-width:750px;
+
+    margin:30px auto;
+
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+
+    border-radius:4px;
+
+    overflow:hidden;
+
+}   
+
+/* ==========================================
+   ENCABEZADO CLÁSICO BEIGE
+   ========================================== */
+.reservas-header {
+    background-color: #f3ebd4; /* Tono crema exacto de la identidad visual */
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.linea-decorativa {
+    border: 0;
+    border-top: 1px solid #7a7565;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.titulo-reservas {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #2c2924;
+    margin: 15px 0;
+}
+
+.bajada-texto {
+    font-size: 1.05rem;
+    color: #4a4538;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* ==========================================
+   ESTILOS DEL FORMULARIO
+   ========================================== */
+.reservas-content {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.formulario-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-input label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2c2924;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.grupo-input label i {
+    color: #27ae60; /* El característico color verde nítido */
+}
+
+/* Estilo de cajas de texto, fechas y selectores */
+.grupo-input input, 
+.grupo-input select {
+    padding: 12px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #333333;
+    background-color: #fafafa;
+    transition: all 0.2s ease;
+}
+
+.grupo-input input:focus, 
+.grupo-input select:focus {
+    outline: none;
+    border-color: #27ae60;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+}
+
+/* Organización en filas para Fecha y Hora juntas */
+.fila-formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Botón de envío elegante */
+.btn-reservar {
+    background-color: #2c2924; /* Color oscuro premium */
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.btn-reservar:hover {
+    background-color: #27ae60; /* Cambia a verde en hover */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.2);
+}
+
+/* ==========================================
+   SECCIÓN DE ALTA CALIDAD PARA EL CÓDIGO QR
+   ========================================== */
+.reservas-qr-section {
+    text-align: center;
+    padding: 10px 40px 45px 40px;
+    background-color: #ffffff;
+}
+
+.linea-divisoria-qr {
+    border: 0;
+    border-top: 1px solid #eaeaea;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.texto-qr {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c2924;
+    margin: 0 0 8px 0;
+}
+
+.subtexto-qr {
+    font-size: 0.9rem;
+    color: #666666;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    line-height: 1.5;
+}
+
+/* Contenedor flotante del QR */
+.qr-contenedor {
+    display: inline-block;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto dinámico interactivo al pasar el cursor sobre el QR */
+.qr-contenedor:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Crece sutilmente */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.qr-img {
+    display: block;
+    width: 150px; /* Tamaño equilibrado de alta nitidez */
+    height: 150px;
+}
+
+/* ==========================================
+   DISEÑO ADAPTABLE (RESPONSIVO)
+   ========================================== */
+@media (max-width: 600px) {
+    .reservas-content {
+        padding: 25px 20px;
+    }
+    
+    .fila-formulario {
+        grid-template-columns: 1fr; /* Colapsa en una sola columna en pantallas de celular */
+        gap: 22px;
+    }
+    
+    .titulo-reservas {
+        font-size: 2rem;
+    }
+}
+.pie-pagina-exacto {
+            width: 100%;
+            margin-top: 50px; /* Separación por si lo pones abajo de otra sección */
+        }
+
+        /* ==========================================
+           BARRA SUPERIOR (GRIS OSCURO MATE)
+           ========================================== */
+        .bloque-caracteristicas {
+            background-color: #222222; /* Fondo oscuro real */
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contenedor-caracteristicas {
+            width: 100%;
+            max-width: 1200px;
+            /* Flexbox obliga a que se alineen en fila horizontal */
+            display: flex; 
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .item-caracteristica {
+            flex: 1; /* Distribuye el espacio equitativamente entre los 5 bloques */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Área fija para los dibujos verdes */
+        .dibujo-svg {
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .svg-verde {
+            width: 75px;
+            height: auto;
+        }
+
+        /* Dibujo 1: DESDE 1911 */
+        .txt-desde {
+            color: #27ae60;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+        .txt-ano {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #27ae60;
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 0.9;
+            margin-top: 2px;
+        }
+
+        /* Dibujo 4: LA TIENDA */
+        .caja-tienda-real {
+            border-top: 1.5px solid #27ae60;
+            border-bottom: 1.5px solid #27ae60;
+            color: #27ae60;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 3px 6px;
+            letter-spacing: 1px;
+        }
+
+        /* Textos del bloque oscuro */
+        .titulo-dorado {
+            color: #ebdcb9; /* Color crema suave */
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .descripcion-blanca {
+            color: #cccccc;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            margin: 0;
+            max-width: 180px; /* Evita que el texto se estire feo */
+        }
+
+        /* ==========================================
+           BARRA INFERIOR (GRIS CLARO / CONTACTO)
+           ========================================== */
+        .bloque-datos-redes {
+            background-color: #f2f2f2; /* Fondo claro real */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .contenedor-datos-redes {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between; /* Datos izquierda, redes derecha */
+            align-items: center;
+        }
+
+        /* Fuente de máquina de escribir verde para Bogotá */
+        .datos-contacto-bogota {
+            font-family: 'Courier Prime', 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #27ae60;
+        }
+
+        .datos-contacto-bogota p {
+            margin: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Botones de Redes Sociales Cuadrados */
+        .iconos-redes-sociales {
+            display: flex;
+            gap: 8px;
+        }
+
+        .boton-red {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .facebook { background-color: #2f80ed; }
+        .twitter { background-color: #2d9cdb; }
+        .whatsapp { background-color: #219653; }
+        .telegram { background-color: #2f80ed; }
+        .mas-opciones { background-color: #1f75fe; }
+
+        .boton-red:hover {
+            transform: translateY(-2px);
+        }
+
+        /* ==========================================
+           RESPONSIVO: ADAPTABLE A CELULARES
+           ========================================== */
+        @media (max-width: 800px) {
+            .contenedor-caracteristicas {
+                flex-direction: column; /* Se apilan solo si la pantalla es muy pequeña */
+                align-items: center;
+                gap: 30px;
+            }
+            .contenedor-datos-redes {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .datos-contacto-bogota p {
+                justify-content: center;
+            }
+        }
