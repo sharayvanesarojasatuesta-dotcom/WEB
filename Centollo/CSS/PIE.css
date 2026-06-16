@@ -1,0 +1,192 @@
+/* ==========================================
+           RESET BASE PARA EVITAR DESCUADRES
+           ========================================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background-color: #ffffff;
+        }
+
+        .pie-pagina-exacto {
+            width: 100%;
+            margin-top: 50px; /* Separación por si lo pones abajo de otra sección */
+        }
+
+        /* ==========================================
+           BARRA SUPERIOR (GRIS OSCURO MATE)
+           ========================================== */
+        .bloque-caracteristicas {
+            background-color: #222222; /* Fondo oscuro real */
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contenedor-caracteristicas {
+            width: 100%;
+            max-width: 1200px;
+            /* Flexbox obliga a que se alineen en fila horizontal */
+            display: flex; 
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .item-caracteristica {
+            flex: 1; /* Distribuye el espacio equitativamente entre los 5 bloques */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Área fija para los dibujos verdes */
+        .dibujo-svg {
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .svg-verde {
+            width: 75px;
+            height: auto;
+        }
+
+        /* Dibujo 1: DESDE 1911 */
+        .txt-desde {
+            color: #27ae60;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+        .txt-ano {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #27ae60;
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 0.9;
+            margin-top: 2px;
+        }
+
+        /* Dibujo 4: LA TIENDA */
+        .caja-tienda-real {
+            border-top: 1.5px solid #27ae60;
+            border-bottom: 1.5px solid #27ae60;
+            color: #27ae60;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 3px 6px;
+            letter-spacing: 1px;
+        }
+
+        /* Textos del bloque oscuro */
+        .titulo-dorado {
+            color: #ebdcb9; /* Color crema suave */
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .descripcion-blanca {
+            color: #cccccc;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            margin: 0;
+            max-width: 180px; /* Evita que el texto se estire feo */
+        }
+
+        /* ==========================================
+           BARRA INFERIOR (GRIS CLARO / CONTACTO)
+           ========================================== */
+        .bloque-datos-redes {
+            background-color: #f2f2f2; /* Fondo claro real */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .contenedor-datos-redes {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between; /* Datos izquierda, redes derecha */
+            align-items: center;
+        }
+
+        /* Fuente de máquina de escribir verde para Bogotá */
+        .datos-contacto-bogota {
+            font-family: 'Courier Prime', 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #27ae60;
+        }
+
+        .datos-contacto-bogota p {
+            margin: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Botones de Redes Sociales Cuadrados */
+        .iconos-redes-sociales {
+            display: flex;
+            gap: 8px;
+        }
+
+        .boton-red {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .facebook { background-color: #2f80ed; }
+        .twitter { background-color: #2d9cdb; }
+        .whatsapp { background-color: #219653; }
+        .telegram { background-color: #2f80ed; }
+        .mas-opciones { background-color: #1f75fe; }
+
+        .boton-red:hover {
+            transform: translateY(-2px);
+        }
+
+        /* ==========================================
+           RESPONSIVO: ADAPTABLE A CELULARES
+           ========================================== */
+        @media (max-width: 800px) {
+            .contenedor-caracteristicas {
+                flex-direction: column; /* Se apilan solo si la pantalla es muy pequeña */
+                align-items: center;
+                gap: 30px;
+            }
+            .contenedor-datos-redes {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .datos-contacto-bogota p {
+                justify-content: center;
+            }
+        }

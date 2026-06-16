@@ -1,0 +1,427 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+   ========================================== */
+body {
+
+    background-color:#ffffff;
+
+    font-family:'Source Sans 3', sans-serif;
+
+    margin:0;
+
+    padding:0;
+
+    color:#1a1a1a;
+
+}
+/* ==========================================
+   HEADER
+========================================== */
+
+
+header{
+
+    background-color:#e8e8e8;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+.logo img{
+
+    width:110px;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+
+header h1{
+
+    font-family:'Lobster',cursive;
+
+    font-size:70px;
+
+    font-weight:normal;
+
+    margin:10px 0 0;
+
+}
+/* ==========================================
+   NAV
+========================================== */
+
+
+nav{
+
+background:#111;
+
+}
+
+
+nav ul{
+
+list-style:none;
+
+display:flex;
+
+justify-content:center;
+
+margin:0;
+
+padding:0;
+
+}
+
+
+nav li{
+
+padding:18px 35px;
+
+}
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+}
+
+
+nav a:hover{
+
+color:#d4d4d4;
+
+}
+
+.contacto-container {
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:20px auto 0 auto;
+
+}
+
+/* ==========================================
+   BLOQUE ENCABEZADO BEIGE
+   ========================================== */
+.contacto-header {
+    background-color: #f3ebd4; /* Tono crema/beige exacto de la referencia */
+    padding: 35px 40px;
+    text-align: center;
+}
+
+.linea-decorativa {
+    border: 0;
+    border-top: 1px solid #7a7565; /* Línea delgada oscura del título */
+    width: 100px;
+    margin: 0 auto;
+}
+
+.titulo-contacto {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #2c2924;
+    margin: 12px 0;
+}
+
+.bajada-texto {
+    font-size: 1.05rem;
+    color: #2c2924;
+    margin-top: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0.2px;
+}
+
+/* ==========================================
+   BLOQUE DE COLUMNAS (GRID)
+   ========================================== */
+.contacto-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide la pantalla en 2 columnas perfectas */
+    gap: 60px; /* Separación central */
+    padding: 50px 40px 20px 40px;
+    background-color: #ffffff;
+}
+
+.columna-info h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #2c2924;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.columna-info p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0 0 10px 0;
+}
+
+/* Estilo del Email */
+.email-link {
+    color: #27ae60; /* El color verde de la imagen original */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.email-link:hover {
+    color: #1e7e43;
+    text-decoration: underline; /* Efecto dinámico al pasar el cursor */
+}
+
+/* ==========================================
+   SECCIÓN DEL CÓDIGO QR
+   ========================================== */
+.contacto-qr-section {
+    text-align: center;
+    padding: 10px 40px 50px 40px;
+    background-color: #ffffff;
+}
+
+.linea-decorativa-qr {
+    border: 0;
+    border-top: 1px solid #e4e6eb; /* Divisor muy sutil */
+    width: 90%;
+    margin: 0 auto 25px auto;
+}
+
+.texto-qr {
+    font-size: 0.9rem;
+    color: #65676b;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.qr-wrapper {
+    display: inline-block;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #e4e6eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    
+    /* Transición suave para el efecto hover del QR */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dinamismo Hover: El QR se agranda y flota ligeramente al pasar el mouse */
+.qr-wrapper:hover {
+    cursor: pointer;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.qr-imagen {
+    display: block;
+    width: 130px; 
+    height: 130px;
+}
+
+/* ==========================================
+   DISEÑO ADAPTABLE (RESPONSIVO)
+   ========================================== */
+@media (max-width: 768px) {
+    .contacto-info-grid {
+        grid-template-columns: 1fr; /* Pone las columnas una abajo de otra en celulares */
+        gap: 35px;
+        padding: 30px 20px;
+    }
+    
+    .contacto-header {
+        padding: 25px 20px;
+    }
+}
+.pie-pagina-exacto {
+            width: 100%;
+            margin-top: 50px; /* Separación por si lo pones abajo de otra sección */
+        }
+
+        /* ==========================================
+           BARRA SUPERIOR (GRIS OSCURO MATE)
+           ========================================== */
+        .bloque-caracteristicas {
+            background-color: #222222; /* Fondo oscuro real */
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contenedor-caracteristicas {
+            width: 100%;
+            max-width: 1200px;
+            /* Flexbox obliga a que se alineen en fila horizontal */
+            display: flex; 
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .item-caracteristica {
+            flex: 1; /* Distribuye el espacio equitativamente entre los 5 bloques */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Área fija para los dibujos verdes */
+        .dibujo-svg {
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .svg-verde {
+            width: 75px;
+            height: auto;
+        }
+
+        /* Dibujo 1: DESDE 1911 */
+        .txt-desde {
+            color: #27ae60;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+        .txt-ano {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: #27ae60;
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 0.9;
+            margin-top: 2px;
+        }
+
+        /* Dibujo 4: LA TIENDA */
+        .caja-tienda-real {
+            border-top: 1.5px solid #27ae60;
+            border-bottom: 1.5px solid #27ae60;
+            color: #27ae60;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 3px 6px;
+            letter-spacing: 1px;
+        }
+
+        /* Textos del bloque oscuro */
+        .titulo-dorado {
+            color: #ebdcb9; /* Color crema suave */
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .descripcion-blanca {
+            color: #cccccc;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            margin: 0;
+            max-width: 180px; /* Evita que el texto se estire feo */
+        }
+
+        /* ==========================================
+           BARRA INFERIOR (GRIS CLARO / CONTACTO)
+           ========================================== */
+        .bloque-datos-redes {
+            background-color: #f2f2f2; /* Fondo claro real */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .contenedor-datos-redes {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between; /* Datos izquierda, redes derecha */
+            align-items: center;
+        }
+
+        /* Fuente de máquina de escribir verde para Bogotá */
+        .datos-contacto-bogota {
+            font-family: 'Courier Prime', 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #27ae60;
+        }
+
+        .datos-contacto-bogota p {
+            margin: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Botones de Redes Sociales Cuadrados */
+        .iconos-redes-sociales {
+            display: flex;
+            gap: 8px;
+        }
+
+        .boton-red {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .facebook { background-color: #2f80ed; }
+        .twitter { background-color: #2d9cdb; }
+        .whatsapp { background-color: #219653; }
+        .telegram { background-color: #2f80ed; }
+        .mas-opciones { background-color: #1f75fe; }
+
+        .boton-red:hover {
+            transform: translateY(-2px);
+        }
+
+        /* ==========================================
+           RESPONSIVO: ADAPTABLE A CELULARES
+           ========================================== */
+        @media (max-width: 800px) {
+            .contenedor-caracteristicas {
+                flex-direction: column; /* Se apilan solo si la pantalla es muy pequeña */
+                align-items: center;
+                gap: 30px;
+            }
+            .contenedor-datos-redes {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .datos-contacto-bogota p {
+                justify-content: center;
+            }
+        }

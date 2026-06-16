@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Centollo</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <div class="modal-dia" id="modalDia">
+
+    <div class="modal-contenido">
+
+        <button class="cerrar-modal" onclick="cerrarModal()">
+            ×
+        </button>
+
+
+        <img src="./IMAGENES/ricocentollo.png" 
+        alt="Plato del día"
+        class="imagen-modal">
+
+
+        <div class="info-modal">
+
+            <h2>
+                🦀 Plato del día
+            </h2>
+
+
+            <h3>
+                Centollo gratinado especial
+            </h3>
+
+
+            <p>
+                Disfruta hoy de nuestro plato recomendado 
+                con producto fresco del mar seleccionado.
+            </p>
+
+
+            <span class="descuento">
+                15% DE DESCUENTO HOY
+            </span>
+
+
+            <a href="./PAGINAS/menu.html" class="boton-modal">
+                Ver menú
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+    <!-- Encabezado -->
+    <header>
+    <div class="logo">
+        <img src="./IMAGENES/logo.png" alt="Logo Cangrejo">
+    </div>
+    <h1>El Centollo</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./PAGINAS/menu.html">Menu</a></li>
+        <li><a href="./PAGINAS/contacto.html">Contacto</a></li>
+        <li><a href="./PAGINAS/UBICACION.html">Ubicación</a></li>
+        <li><a href="./PAGINAS/RESERVAS.html">Reservas</a></li>
+    </ul>
+</nav>
+
+    <!-- Contenido -->
+    <main class="contenedor">
+
+    <div class="card">
+
+        <!-- Slider -->
+        <div class="slider-container">
+
+            <img src="./IMAGENES/cangrejo.png" class="slide active">
+            <img src="./IMAGENES/bogavante.jpg" class="slide">
+            <img src="./IMAGENES/Langosta.jpg" class="slide">
+            <img src="./IMAGENES/Pulpo.jpg" class="slide">
+            <img src="./IMAGENES/ostra.jpg" class="slide">
+
+            <div class="indicadores">
+                <span class="dot active-dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+
+        
+
+
+
+        <!-- Información -->
+        <section class="info">
+
+    <h2 id="nombre">Centollo</h2>
+
+    <p id="descripcion">
+        También conocido como Changurro o Txangurro, Cámara, Araña,
+        Cranca, Pateiro, Bruño o Cangrejo Velludo. Es un
+        <strong>crustáceo braquiuro</strong> y decápodo. Pertenece a la
+        familia Majidae, la misma que los Cangrejos.
+        Vive en la costa en fondos rocosos o arenosos.
+        Habita en profundidades mayores de 100m.
+    </p>
+
+    <p>
+        <strong id="nombre-cientifico">Centollo</strong>
+     <em id="cientifico">Maja squinado</em>
+    </p>
+
+    <p>
+        <strong>(Eng)</strong> <span id="ingles">Spinous spider crab</span>
+        <br>
+        <strong>(Fr)</strong> <span id="frances">Araignée européenne</span>
+    </p>
+
+    <p>
+        <strong>Peso</strong> <span id="peso">500 gr - 4 kg</span>
+        &nbsp;&nbsp;&nbsp;
+        <strong>Dimensiones</strong> <span id="dimensiones">12 - 20 cm</span>
+    </p>
+
+</section>
+</div>     
+</main> 
+
+    <script src="./JS/index.js"></script>
+    <footer class="pie-pagina-exacto">
+        
+        <!-- PARTE SUPERIOR (FONDO OSCURITO) -->
+        <div class="bloque-caracteristicas">
+            <div class="contenedor-caracteristicas">
+                
+                <!-- 1. Más de 100 años -->
+                <div class="item-caracteristica">
+                    <div class="dibujo-svg">
+                        <span class="txt-desde">DESDE</span>
+                        <span class="txt-ano">1911</span>
+                    </div>
+                    <h3 class="titulo-dorado">MÁS DE 100 AÑOS</h3>
+                    <p class="descripcion-blanca">Desde 1911 trabajando con el mejor producto del mar</p>
+                </div>
+
+                <!-- 2. Producto más fresco -->
+                <div class="item-caracteristica">
+                    <div class="dibujo-svg">
+                        <svg viewBox="0 0 100 40" class="svg-verde">
+                            <path d="M5,20 C25,5 65,5 85,20 C75,23 75,27 85,25 C65,38 25,38 5,20 Z M85,20 L95,10 L92,20 L95,30 Z" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="20" cy="16" r="1.5" fill="#27ae60"/>
+                        </svg>
+                    </div>
+                    <h3 class="titulo-dorado">EL PRODUCTO MÁS FRESCO</h3>
+                    <p class="descripcion-blanca">Pescados y mariscos directos de la lonja</p>
+                </div>
+
+                <!-- 3. Ahumados artesanales -->
+                <div class="item-caracteristica">
+                    <div class="dibujo-svg">
+                        <svg viewBox="0 0 100 40" class="svg-verde">
+                            <path d="M30,28 C25,28 22,23 25,18 C25,13 35,10 40,14 C45,8 60,8 65,16 C72,14 78,20 75,26 C78,32 70,38 62,36 C55,40 35,40 30,28 Z" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="titulo-dorado">AHUMADOS ARTESANALES</h3>
+                    <p class="descripcion-blanca">Descubre nuestros procesos de ahumado</p>
+                </div>
+
+                <!-- 4. Tienda propia -->
+                <div class="item-caracteristica">
+                    <div class="dibujo-svg">
+                        <div class="caja-tienda-real">LA TIENDA</div>
+                    </div>
+                    <h3 class="titulo-dorado">TIENDA PROPIA</h3>
+                    <p class="descripcion-blanca">También te servimos en nuestra tienda física</p>
+                </div>
+
+                <!-- 5. Seleccionamos por ti -->
+                <div class="item-caracteristica">
+                    <div class="dibujo-svg">
+                        <svg viewBox="0 0 100 40" class="svg-verde">
+                            <path d="M15,35 C30,28 65,10 80,7" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M80,7 C85,15 85,25 85,30 C85,34 82,36 80,34" fill="none" stroke="#27ae60" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="titulo-dorado">SELECCIONAMOS POR TI</h3>
+                    <p class="descripcion-blanca">Despreocúpate y disfruta del mejor género del mar</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PARTE INFERIOR (FONDO CLARO) -->
+        <div class="bloque-datos-redes">
+            <div class="contenedor-datos-redes">
+                
+                <!-- Datos con iconos limpios -->
+                <div class="datos-contacto-bogota">
+                    <p><i class="fa-solid fa-location-dot"></i> Carrera 1 #93-50 Chicó Alto, Bogotá</p>
+                    <p><i class="fa-solid fa-phone"></i> Tel: (57) 316 690 0508</p>
+                    <p><i class="fa-solid fa-envelope"></i> servicioalcliente@tramonti.com.co</p>
+                </div>
+
+                <!-- Botones de redes ordenados -->
+                <div class="iconos-redes-sociales">
+                    <a href="#" class="boton-red facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="boton-red twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="boton-red whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="boton-red telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="boton-red mas-opciones"><i class="fa-solid fa-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <link rel="stylesheet" href="./CSS/chatbot.css">
+
+<script src="./JS/chatbot.js"></script>
+
+</body>
+</html>
